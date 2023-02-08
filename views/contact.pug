@@ -1,0 +1,30 @@
+extends layout 
+
+//- block append scripts 
+//-   //add more scripts to the scripts block from layout.pug
+//-   script(src="/about.js")
+
+block main-content 
+  h1.page-title #{title}
+  h3.address Location
+  p.address 123 Main street,
+  p.address Toronto, ON, A1A A1A.
+  p.address Hours: Monday-Sunday 10:00AM to 6:00PM
+  p.address Phone: +1 123-456-7890
+  p.address Email: example@gmail.com
+  h1.form-title Send a Message!
+  form(method="",action="")
+    div 
+      label(for="name") Name: 
+      input(type="text", id="name", name="name" placeholder="Enter Your Name")
+    div 
+      label(for="email") Email: 
+      input(type="email", id="email", name="email", placeholder="Enter Your Email")  
+    div 
+      label(for="phone") Phone: 
+      input(type="number", id="phone", name="phone", placeholder="Enter Your Phone Number")
+    div 
+      label.message(for="message") Message: 
+    div    
+      textarea
+    button(type="submit") Send  

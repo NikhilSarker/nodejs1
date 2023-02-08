@@ -1,0 +1,42 @@
+extends layout 
+
+block main-content   
+  link(rel="stylesheet", type="text/css", href="/style.css") 
+  #banner
+    img(src="/images/banner.jpg" alt="banner image" )
+  h1.page-title Welcome to Fashion House  
+    h2.new_collection New Collection! 
+  
+    .product-images 
+      .img 
+        img(src="/images/cotton.jpg" alt="cotton" ) 
+        //- IMAGE LINK: https://www.flipkart.com/tripzira-embroidered-chanderi-cotton-linen-saree/p/itm74f6e4b5371a3?pid=SARGGGH8HHFTZJUS&lid=LSTSARGGGH8HHFTZJUSXHQ5TJ&marketplace=FLIPKART&q=white+saree+with+red+border&store=clo%2F8on%2Fzpd%2F9og&srno=s_1_34&otracker=search&otracker1=search&fm=Search&iid=4189b482-f84b-4a3c-9eee-1ef610afefd5.SARGGGH8HHFTZJUS.SEARCH&ppt=sp&ppn=sp&ssid=9p6daqr51c0000001675568249354&qH=c053919481c86e89  
+        p.price $89.00
+    
+      .img 
+        img(src="/images/jamdani.jpg" alt="jamdani" ) 
+        //- IMAGE LINK: https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.etsystatic.com%2F27776415%2Fr%2Fil%2F3ccffe%2F4192166428%2Fil_fullxfull.4192166428_pid7.jpg&imgrefurl=https%3A%2F%2Fwww.etsy.com%2Flisting%2F1244448391%2Foriginal-dhakai-jamdani-saree-black-and&tbnid=RNibmQplwSwVCM&vet=10CBwQxiAoBGoXChMIiPuhirj9_AIVAAAAAB0AAAAAEEE..i&docid=rO6wRempT7O7sM&w=1200&h=1600&itg=1&q=black%20jamdani%20saree%20jpg&hl=en&ved=0CBwQxiAoBGoXChMIiPuhirj9_AIVAAAAAB0AAAAAEEE  
+        p.price $129.00
+        
+      .img 
+        img(src="/images/silk.jpg" alt="silk" ) 
+        //- IMAGE LINK:https://www.etsy.com/uk/listing/1234004187/pure-gadwal-silk-saree-in-blue-with-wide  
+        p.price $79.00
+        
+      .img 
+        img(src="/images/banarasi.jpg" alt="banarasi" ) 
+        //- IMAGE LINK: https://nashaya.com/products/banarasi-silk-sarees  
+        p.price $99.00
+  product#product-description 
+    ul.pdescription 
+      each products in product 
+        li 
+          a(href=products.color) #{products.color} 
+          a(href=products.color) #{products.material} 
+          a(href=products.color) #{products.product} 
+
+       
+
+  h3.thankyou-message A Very Special Thank You Note
+  p.thankyou-message-para I would just like to say thank you to all my in person customers of 11 years, for being a part of my family. I am very grateful for your continued patronage because I wouldn't be here without loyal customers like you, who have truly inspired me in different ways for where I am today. 11 years has been a truly long time that you guys have stuck by me and helped me to grow and grow and grow. I am sure that venturing into this new online platform will help me reach a broader spectrum.
+  p.thankyou-message-para Thank you once again!

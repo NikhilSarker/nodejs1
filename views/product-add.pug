@@ -1,0 +1,15 @@
+extends layout 
+
+block main-content 
+  h1.page-title Add a new product
+  form(method="post",action="/admin/product/add/submit")
+    div 
+      label(for="color") Color: 
+      input(type="text", id="color", name="color" placeholder="e.g- black")
+    div 
+      label(for="material") Material: 
+      input(type="text", id="material", name="material", placeholder="e.g- cotton")  
+    div 
+      label(for="product") Product: 
+      input(type="text", id="product", name="product", placeholder="e.g- sari")
+    button(type="submit") Add product   

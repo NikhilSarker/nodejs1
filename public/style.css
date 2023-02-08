@@ -1,0 +1,261 @@
+/* LAYOUT.pug PAGE START */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding-left: 0 !important;
+}
+li{
+  list-style: none;
+}
+img{
+  vertical-align: middle;
+}
+p{
+  font-size: 24px;
+}
+
+/* COMMON CSS END */
+
+body{
+  background-color: beige;
+ 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#site-name a{
+  text-decoration: none;  
+  color: purple;
+  font-family: fantasy;
+
+}
+#main-navigation li{
+  display: inline-block;
+  margin-left: 50px;
+}
+#main-navigation li a{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 700;
+} 
+#main-navigation li a:hover{ 
+  color: purple;
+}
+
+#header{
+  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer p{
+  text-align: center;
+  margin-top: 100px;
+}
+/* LAYOUT.pug PAGE END */
+/* INDEX.pug PAGE START */
+
+#banner img{
+  width: 100%;
+  height: 600px;
+  /* margin-top: 100px; */
+}
+.new_collection{
+  padding: 50px 50px;
+
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  color:purple;
+  margin-top: 50px;
+}
+h2, h3{
+  font-size: 30px; 
+  /* margin-top: 50px; */
+}
+.product-images{  
+  margin-top: 100px;
+  display: flex;  
+  text-align:center;
+  justify-content: space-around;
+ 
+}
+.img{
+  width: 23%;
+}
+.img img{
+  width: 100%;
+  height: 300px; 
+}
+.price{
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color:purple;
+ 
+}
+.pdescription{
+  display: flex;
+  justify-content: space-around;
+  /* margin: 0px 235px; */
+}
+
+
+#product-description a{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color:purple;
+  padding-top: 5px;
+ 
+
+}
+.thankyou-message{
+  padding: 0px 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.thankyou-message-para{
+  text-align: center;
+  padding: 25px 50px;
+}
+
+/* ABOUT PAGE START */
+.para{
+  padding: 0px 50px;
+  padding-top: 20px;
+}
+
+/* ABOUT PAGE END */
+/* CONTACT PAGE START */
+.address{
+  text-align: center;
+  padding-top: 15px;
+}
+.form-title{
+  font-size: 24px;
+  color: purple;
+  padding: 50px 0px;
+}
+form{
+  text-align: center;
+}
+label{
+  font-size: 24px;
+  padding: 10px;
+}
+input{
+ width: 350px;
+ height: 40px;
+ margin-top: 10px;
+}
+textarea{
+  width: 350px;
+  height: 200px;
+  margin-left: 100px;
+
+}
+.message{
+  margin-left: -335px;
+ 
+}
+button{
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-left: -140px;
+  margin-top: 20px;
+
+}
+/* CONTACT PAGE END */
+/* PRODUCT PAGE START */
+.gallery-title{
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px;
+}
+.gallery-images{
+  padding: 25px 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+/* PRODUCT PAGE END */
+
+/* RESPONSIVE PART START */
+@media screen and (max-width: 1320px) {
+#header{
+  padding: 25px 50px;
+}
+.product-images{  
+ 
+  justify-content: space-between;
+ 
+}
+  
+  .img{
+    width: 23%;
+  }
+  .new_collection{
+    padding-left: 50px;
+  }
+  .thankyou-message{
+    padding: 25px 0px;   
+  }
+  .thankyou-message-para{
+    padding: 0px 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+.img{
+  width: 25%;
+}
+.img img{
+  width: 95%;
+}
+  
+  .thankyou-message{
+    padding: 25px 50px; 
+    text-align: center;
+    font-size: 30px;
+  }
+  .thankyou-message-para{
+    text-align: center;
+    padding: 25px 50px; 
+    
+  }
+ 
+}
+/* FOR TABLET SCREEN */
+ @media screen and (max-width: 768px) { 
+  /* .img{
+    width: 50%;
+  } */
+}
+/* FOR MOBILE SCREEN */
+@media screen and (max-width: 576px) {
+  .product-images{  
+    display: block;  
+   
+  }
+ 
+ 
+}
+/* FOR MOBILE SCREEN */
+@media screen and (max-width: 320px) {
+  
+
+}
+/* RESPONSIVE PART END */

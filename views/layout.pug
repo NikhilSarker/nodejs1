@@ -1,0 +1,28 @@
+block variables 
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title} | Fashion House
+    link(rel="stylesheet", type="text/css", href="/style.css")
+  body 
+    header#header 
+      .header-content
+        h2#site-name 
+          a(href="/") Fashion House
+      nav#main-navigation 
+        ul 
+          li 
+            a(href="/") Home   
+          li 
+            a(href="/about") About     
+          li 
+            a(href="/product") Product     
+          li 
+            a(href="/contact") Contact    
+            
+    main#main 
+      //img(src="/images/", alt="");
+      block main-content 
+    footer#footer 
+      p &copy; Copyright FashionHouse, 2023.   
